@@ -60,12 +60,6 @@ transform:scale(1.05);
 box-shadow:0 0 25px pink;
 }
 
-.video video{
-width:80%;
-max-width:700px;
-border-radius:20px;
-}
-
 .promise,.telugu{
 padding:60px;
 max-width:700px;
@@ -74,7 +68,20 @@ line-height:1.7;
 font-size:20px;
 }
 
-/* popup */
+.video video{
+width:80%;
+max-width:700px;
+border-radius:20px;
+}
+
+.birthday-final{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-size:24px;
+}
 
 .popup{
 display:none;
@@ -95,8 +102,6 @@ padding:25px;
 border-radius:15px;
 max-width:300px;
 }
-
-/* stars */
 
 .stars{
 position:fixed;
@@ -119,8 +124,7 @@ box-shadow:
 800px 200px white,
 1000px 400px white,
 1200px 100px white,
-1400px 600px white,
-1600px 300px white;
+1400px 600px white;
 animation:twinkle 4s infinite alternate;
 }
 
@@ -129,19 +133,14 @@ from{opacity:0.3;}
 to{opacity:1;}
 }
 
-/* hearts */
-
 .hearts::before{
-content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
-position:fixed;
+content:"❤️ ❤️ ❤️ ";
+position:fixed ;
 top:-10%;
-left:0;
-font-size:22px;
+left: 15;
+font-size:20px;
 opacity:0.3;
 animation:fall 12s linear infinite;
 }
 
-@keyframes fall{
-0%{transform:translateY(-10%)}
-100%{transform:translateY(110vh)}
-}
+@keyframes fall{ 0%{transform:translateY(-10%)} 100%{transform:translateY(110vh)} }

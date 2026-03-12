@@ -1,10 +1,6 @@
-
-// music autoplay attempt
-
 window.addEventListener("load",()=>{
 
 const music=document.getElementById("bgMusic");
-
 music.volume=0.4;
 
 const playPromise=music.play();
@@ -18,9 +14,6 @@ document.body.addEventListener("click",()=>music.play(),{once:true});
 }
 
 });
-
-
-// countdown
 
 const target=new Date("March 14, 2026 00:00:00").getTime();
 
@@ -37,18 +30,12 @@ days+" days "+hours+" hours left";
 
 },1000);
 
-
-// open gift
-
 function openGift(){
 
 document.querySelector(".start").style.display="none";
 document.getElementById("content").classList.remove("hidden");
 
 }
-
-
-// image messages
 
 const memories={
 1:"The cuteness of the little one that melts my heart.",
@@ -73,10 +60,6 @@ document.getElementById("popup").style.display="none";
 
 }
 
-
-// stop music when video plays
-
 function stopMusic(){
 document.getElementById("bgMusic").pause();
 }
-
