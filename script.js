@@ -15,7 +15,7 @@ document.body.addEventListener("click",()=>music.play(),{once:true});
 
 });
 
-const target=new Date("March 14, 2026 00:00:00").getTime();
+const target=new Date("March 13, 2026 00:00:00").getTime();
 
 setInterval(()=>{
 
