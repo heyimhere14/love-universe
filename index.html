@@ -9,11 +9,12 @@
 
 <body>
 
-<audio id="bgMusic" loop>
+<audio id="bgMusic" loop preload="auto">
 <source src="music/song.mp3" type="audio/mp3">
 </audio>
 
 <div class="stars"></div>
+<canvas id="particles"></canvas>
 <div class="hearts"></div>
 
 <section class="start">
@@ -27,11 +28,11 @@
 
 <h1 class="title glow">Happy 19th Birthday ❤️</h1>
 <p class="subtitle">One year of memories. A lifetime to go ❤️</p>
+
 <section class="gallery">
 <h2>Our Beautiful Moments</h2>
 
 <div class="grid">
-
 <img src="images/pic1.jpeg" onclick="showMemory(1)">
 <img src="images/pic2.jpeg" onclick="showMemory(2)">
 <img src="images/pic3.jpeg" onclick="showMemory(3)">
@@ -41,17 +42,16 @@
 <img src="images/pic7.jpeg" onclick="showMemory(7)">
 <img src="images/pic8.jpeg" onclick="showMemory(8)">
 <img src="images/pic9.jpeg" onclick="showMemory(9)">
-
 </div>
+
 </section>
+
 
 <section class="promise">
 
 <h2>A Promise From Me ❤️</h2>
 
 <p>
-TRUST ME! <br><br>
-
 I'm not going to lose feelings.<br>
 I'm not going to find someone better.<br>
 I'm not going to do anything wrong with you.<br>
@@ -62,11 +62,7 @@ I want you and only you.<br>
 No one else.<br><br>
 
 Because to me you're my kind of perfect.<br>
-And I can't imagine my life without you.<br><br>
-
-I just love you.<br>
-That's all.<br>
-Pure and simple.
+And I can't imagine my life without you.
 </p>
 
 </section>
@@ -77,7 +73,6 @@ Pure and simple.
 <h2>Something I Want To Tell You 💖</h2>
 
 <p>
-
 Nuv ela ochavo ndk ochavo nak telidhu but ochesav.<br>
 I feel soo happy like everything.<br><br>
 
@@ -85,17 +80,16 @@ Nen badha padthe nuv inka paadthav.<br>
 Nen chestha chestha ani chepthav.<br>
 I feel soo lucky to have you.<br><br>
 
-This more than a year journey is happy tears, fightings.<br>
+This more than a year journey is happy, tears, fightings.<br>
 But manam eppudu velipolehdu.<br><br>
 
-Nen enni thapulu chesina nuv forgive chesavv.<br>
+Nen enni thapulu chesina nuv forgive chesav.<br>
 Nuv na medha arichina nannu odhilesi poledhu.<br><br>
 
 Trust me I love you forever and ever.<br>
 Thankyou soo much for existing.<br><br>
 
-And finally happy 19 to my little cupcake 🎂❤️
-
+Happy 19 to my cute little cupcake 🎂❤️
 </p>
 
 </section>
@@ -108,17 +102,6 @@ And finally happy 19 to my little cupcake 🎂❤️
 <video controls onplay="stopMusic()">
 <source src="video/message.mp4" type="video/mp4">
 </video>
-
-</section>
-
-<section class="birthday-final">
-
-<h1>Happy 19th Birthday ❤️</h1>
-
-<p>
-One beautiful year with you.  
-And many more memories waiting for us.
-</p>
 
 </section>
 
@@ -135,4 +118,3 @@ And many more memories waiting for us.
 
 </body>
 </html>
-

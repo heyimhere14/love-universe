@@ -1,19 +1,6 @@
-window.addEventListener("load",()=>{
 
-const music=document.getElementById("bgMusic");
-music.volume=0.4;
 
-const playPromise=music.play();
-
-if(playPromise!==undefined){
-
-playPromise.catch(()=>{
-document.body.addEventListener("click",()=>music.play(),{once:true});
-});
-
-}
-
-});
+// countdown
 
 const target=new Date("March 14, 2026 00:00:00").getTime();
 
@@ -30,12 +17,22 @@ days+" days "+hours+" hours left";
 
 },1000);
 
+
+// open gift + start music immediately
+
 function openGift(){
 
 document.querySelector(".start").style.display="none";
 document.getElementById("content").classList.remove("hidden");
 
+const music=document.getElementById("bgMusic");
+music.volume=0.4;
+music.play();
+
 }
+
+
+// image popup
 
 const memories={
 1:"The cuteness of the little one that melts my heart.",
@@ -60,6 +57,45 @@ document.getElementById("popup").style.display="none";
 
 }
 
+
+// stop music when video starts
+
 function stopMusic(){
 document.getElementById("bgMusic").pause();
 }
+
+
+// particles background
+
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<60;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2
+});
+}
+
+function drawParticles(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fillStyle="white";
+ctx.fill();
+});
+
+requestAnimationFrame(drawParticles);
+
+}
+
+drawParticles();
